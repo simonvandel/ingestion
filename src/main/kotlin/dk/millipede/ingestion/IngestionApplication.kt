@@ -1,5 +1,6 @@
 package dk.millipede.ingestion
 
+import dk.millipede.ingestion.streams.TestStream
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -7,5 +8,7 @@ import org.springframework.boot.runApplication
 class IngestionApplication
 
 fun main(args: Array<String>) {
-	runApplication<IngestionApplication>(*args)
+    runApplication<IngestionApplication>(*args)
+
+    TestStream().test()
 }
