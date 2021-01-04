@@ -14,5 +14,6 @@ spec:
       containers:
         - name: ingestion
           image: abstrakten/ingestion
+          imagePullPolicy: Never
           ports:
             - containerPort: 8080

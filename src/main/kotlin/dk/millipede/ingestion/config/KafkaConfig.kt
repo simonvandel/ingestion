@@ -14,7 +14,7 @@ class KafkaConfig {
         props.putAll(
                 mapOf(
                         StreamsConfig.APPLICATION_ID_CONFIG to "app-id",
-                        StreamsConfig.BOOTSTRAP_SERVERS_CONFIG to "kafka.default.svc.cluster.local:9092",
+                        StreamsConfig.BOOTSTRAP_SERVERS_CONFIG to "kafka-service.default:9092",
                         StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG to Serdes.String().javaClass,
                         StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG to Serdes.String().javaClass
                 )
